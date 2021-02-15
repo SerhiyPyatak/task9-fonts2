@@ -26,6 +26,18 @@ main {
     height:             100vh;
     width: 100%;
 }
+
+header {
+    position:absolute;
+    top: 45px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-end;
+    width: 100%;
+    max-height: 265px;
+    height: 264px;
+}
+
 .content-field {
     display:flex;
     background-color: #fff;
@@ -48,16 +60,67 @@ main {
     font-size:          60px;
     letter-spacing:     8px;
     font-weight:        500;
-    margin: 0;
+    margin: 0 0 25px 0;
+}
+
+.content > h2 {
+    font-family:        Georgia, 'Times New Roman', Times, serif;
+    font-style:         oblique;
+    font-size:          20px;
+    font-weight:        400;
+    color:              rgb(143, 143, 143);
+    margin:             0 0 70px 0;
+    letter-spacing:     1px;
 }
 
 .content > h3 {
     font-family:        'Proxima Nova Regular', Arial, sans-serif;
-    font-weight: 100; 
+    font-weight:        100; 
     text-transform:     uppercase;
     color:              rgb(181,181,181);
-    letter-spacing: 5px;
+    letter-spacing:     5px;
+    margin:             0 0 50px 0;
 }
 .content > p {
     text-align:         justify;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.input-control {
+    background-color: rgb(24, 24, 24);
+    width: 73%;
+    max-width: 880px;
+    height: 184px;
+    font-size: 35px;
+}
+
+.toolbox {
+    display:flex;
+    gap: 25px;
+    padding-left: 30px;
+    align-items:center;
+    height: 80px;
+    max-width: 812px;
+    width: 68%;
+    background-color: rgb(249, 191, 45);
+}
+
+.tool {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 40px;
+    width: 40px;
+    cursor:pointer;
+}
+
+.tool > img {
+    width:auto;
+    height:25px;
+    opacity: 0.4;
+}
+
+.tool:hover > img {
+    opacity: 1;
 }
