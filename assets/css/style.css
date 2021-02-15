@@ -1,0 +1,63 @@
+@import "normalize.css";
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('../fonts/myriad_pro/MYRIADPRO-REGULAR.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Proxima Nova Regular';
+        src: url('../fonts/Proxima Nova/webfontkit-proxima-nova-regular/proxima_nova_regular-webfont.woff2') format('woff2'),
+            url('../fonts/Proxima Nova/webfontkit-proxima-nova-regular/proxima_nova_regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+body {
+    background-color: rgb(70, 79, 84);
+}
+
+main {
+    display:            flex;
+    justify-content:    center;
+    align-items:        flex-end;
+    height:             100vh;
+    width: 100%;
+}
+.content-field {
+    display:flex;
+    background-color: #fff;
+    max-width:          1060px;
+    width:              88%;
+    height:             83%;
+    padding-left:       70px;
+}
+
+.content {
+    border-left:        2px solid rgb(232, 236, 237);
+    font-size:          20px;
+    margin:             0;
+    padding:            200px 100px 40px 55px;
+}
+
+.content > h1 {
+    font-family:        'Myriad Pro Regular', 'Sans Serif';
+    text-transform:     uppercase;
+    font-size:          60px;
+    letter-spacing:     8px;
+    font-weight:        500;
+    margin: 0;
+}
+
+.content > h3 {
+    font-family:        'Proxima Nova Regular', Arial, sans-serif;
+    font-weight: 100; 
+    text-transform:     uppercase;
+    color:              rgb(181,181,181);
+    letter-spacing: 5px;
+}
+.content > p {
+    text-align:         justify;
+}
