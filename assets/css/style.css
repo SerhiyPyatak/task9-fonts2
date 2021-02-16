@@ -7,13 +7,15 @@
     src: local('Myriad Pro Regular'), url('../fonts/myriad_pro/MYRIADPRO-REGULAR.woff') format('woff');
     }
 
-    @font-face {
-        font-family: 'Proxima Nova Regular';
-        src: url('../fonts/Proxima Nova/webfontkit-proxima-nova-regular/proxima_nova_regular-webfont.woff2') format('woff2'),
-            url('../fonts/Proxima Nova/webfontkit-proxima-nova-regular/proxima_nova_regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+    font-family: 'Proxima Nova Regular';
+    src: url('../fonts/Proxima Nova/webfontkit-proxima-nova-regular/proxima_nova_regular-webfont.woff2') format('woff2'),
+    url('../fonts/Proxima Nova/webfontkit-proxima-nova-regular/proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
     background-color: rgb(70, 79, 84);
@@ -83,44 +85,68 @@ header {
 }
 .content > p {
     text-align:         justify;
-    font-size: 22px;
-    line-height: 35px;
+    font-size:          22px;
+    line-height:        35px;
 }
 
 .input-control {
+    display:            flex;
+    flex-direction:     column; 
+    gap:                20px;
     background-color: rgb(24, 24, 24);
-    width: 73%;
-    max-width: 880px;
-    height: 184px;
-    font-size: 35px;
+    width:              73%;
+    max-width:          880px;
+    height:             184px;
+    font-size:          35px;
+    padding:            50px 0 0 65px;
 }
 
 .toolbox {
-    display:flex;
-    gap: 25px;
-    padding-left: 30px;
-    align-items:center;
-    height: 80px;
-    max-width: 812px;
-    width: 68%;
+    display:            flex;
+    gap:                25px;
+    padding-left:       30px;
+    align-items:        center;
+    height:             80px;
+    max-width:          812px;
+    width:              68%;
     background-color: rgb(249, 191, 45);
 }
 
 .tool {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height: 40px;
-    width: 40px;
-    cursor:pointer;
+    display:            flex;
+    justify-content:    center;
+    align-items:        center;
+    height:             40px;
+    width:              40px;
+    cursor:             pointer;
 }
 
 .tool > img {
-    width:auto;
-    height:25px;
-    opacity: 0.4;
+    width:              auto;
+    height:             25px;
+    opacity:            0.4;
 }
 
 .tool:hover > img {
-    opacity: 1;
+    opacity:            1;
+}
+
+.input-control > label {
+    font-family:        'Proxima Nova Regular', Arial, sans-serif;
+    letter-spacing:     5px;
+    font-size:          20px;
+    text-transform:     uppercase;
+    font-weight:        400;
+    color:              rgb(119, 119, 119);
+}
+
+#user-input {
+    background-color: rgb(24, 24, 24);
+    border:             none;
+    border-bottom:      3px solid rgb(48, 48, 48);
+    color:            rgb(254, 254, 254);
+    font-family:        'Playfair Display', serif;
+    font-size:          40px;
+    padding-bottom:     20px;
+    outline:            none;
 }
